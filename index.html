@@ -26,7 +26,7 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
 </head>
 
@@ -228,22 +228,56 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col-md-6 col-sm-12">
                     <div class="card h-100">
-                        <img src="assets/imgs/frontend.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Frontend разработка на <span style="color: #e04b27"> React </h5>
-                            <p class="card-text"><strong>Frontend разработчик</strong> работает с внешней стороной сайта
-                                — то, с чем соприкасается пользователь. Для этого нужно хорошо знать разметку страницы,
-                                стили и JavaScript.</p>
-                        </div>
-                        <div class="card-footer">
-                            <button class="popoverBtn btn btn-link" data-toggle="modal"
-                                data-target="#reactModal">Подробнее...</button>
-                        </div>
+                      <picture>
+                        <source
+                          src="assets/imgs/frontend.webp"
+                          sizes="(max-width: 600px) 320px, 900px"
+                          srcset="assets/imgs/frontend-480.webp 480w, assets/imgs/frontend.webp 900w"
+                          type="image/webp"
+                        />
+                        <img
+                          sizes="(max-width: 600px) 320px, 900px"
+                          srcset="assets/imgs/frontend-480.png 480w, assets/imgs/frontend.png 900w"
+                          src="assets/imgs/frontend.png"
+                          class="card-img-top"
+                          alt="Frontend разработка"
+                          width="900"
+                          height="540"
+                          loading="lazy"
+                        />
+                      </picture>
+                      <div class="card-body">
+                          <h5 class="card-title">Frontend разработка на <span style="color: #e04b27"> React </h5>
+                          <p class="card-text"><strong>Frontend разработчик</strong> работает с внешней стороной сайта
+                              — то, с чем соприкасается пользователь. Для этого нужно хорошо знать разметку страницы,
+                              стили и JavaScript.</p>
+                      </div>
+                      <div class="card-footer">
+                          <button class="popoverBtn btn btn-link" data-toggle="modal"
+                              data-target="#reactModal">Подробнее...</button>
+                      </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div class="card h-100">
-                        <img src="assets/imgs/backend.png" class="card-img-top" alt="...">
+                      <picture>
+                        <source
+                          src="assets/imgs/backend.webp"
+                          sizes="(max-width: 600px) 320px, 900px"
+                          srcset="assets/imgs/backend-480.webp 480w, assets/imgs/backend.webp 900w"
+                          type="image/webp"
+                        />
+                        <img
+                          sizes="(max-width: 600px) 320px, 900px"
+                          srcset="assets/imgs/backend-480.png 480w, assets/imgs/backend.png 900w"
+                          src="assets/imgs/backend.png"
+                          class="card-img-top"
+                          alt="Backend разработка"
+                          width="900"
+                          height="540"
+                          loading="lazy"
+                        />
+                      </picture>
                         <div class="card-body">
                             <h5 class="card-title">Backend разработка на <span style="color: #e04b27">Python</span></h5>
                             <p class="card-text"><strong>Backend разработчик</strong> — это специалист, который отвечает
@@ -422,8 +456,23 @@
 
             <div class="blog-wrapper">
                 <div class="img-wrapper">
-                    <img src="assets/imgs/coder.png"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page">
+                  <picture>
+                    <source
+                      src="assets/imgs/coder.webp"
+                      sizes="(max-width: 480px) 240px, 752px"
+                      srcset="assets/imgs/coder-320.webp 320w, assets/imgs/coder.webp 752w"
+                      type="image/webp"
+                    />
+                    <img
+                      sizes="(max-width: 480px) 240px, 752px"
+                      srcset="assets/imgs/coder-320.png 320w, assets/imgs/coder.png 752w"
+                      src="assets/imgs/coder.png"
+                      alt="Программа обучения Intense IT"
+                      width="752"
+                      height="493"
+                      loading="lazy"
+                    />
+                  </picture>
                     <!-- <div class="date-container">
                         <h6 class="day">29</h6>
                         <h6 class="mun">Jun</h6> 
@@ -466,8 +515,23 @@
                 </div>
 
                 <div class="img-wrapper">
-                    <img src="assets/imgs/what-is-it.png"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page">
+                  <picture>
+                    <source
+                      src="assets/imgs/what-is-it.webp"
+                      sizes="(max-width: 480px) 230px, 680px"
+                      srcset="assets/imgs/what-is-it-320.webp 320w, assets/imgs/what-is-it.webp 680w"
+                      type="image/webp"
+                    />
+                    <img
+                      sizes="(max-width: 480px) 230px, 680px"
+                      srcset="assets/imgs/what-is-it-320.png 320w, assets/imgs/what-is-it.png 680w"
+                      src="assets/imgs/what-is-it.png"
+                      alt="Помощь в трудоустройстве после окончания курса в Intense IT"
+                      width="680"
+                      height="450"
+                      loading="lazy"
+                    />
+                  </picture>
 
                 </div>
             </div>
