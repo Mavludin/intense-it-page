@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
 
-    <!-- Bootstrap + Ollie main styles -->
+    <!-- Bootstrap + main styles -->
 
     <link
       rel="stylesheet"
@@ -26,6 +26,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- <link rel="preload" as="image" href="assets/imgs/header.jpg" imagesrcset="assets/imgs/header-480.jpg 480w, assets/imgs/header-990.jpg 990w, assets/imgs/header-1024.jpg 1024w" imagesizes="100vw"> -->
+
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
@@ -75,6 +78,30 @@
     </nav>
 
     <header id="home" class="header">
+        <picture>
+            <source
+              src="assets/imgs/header.webp"
+              sizes="
+                (max-width: 480px) 480px,
+                (max-width: 990px) 990px,
+                (max-width: 1024px) 1024px,
+                1600px
+              "
+              srcset="
+                assets/imgs/header-480.webp 480w,
+                assets/imgs/header-990.webp 990w,
+                assets/imgs/header-1024.webp 1024w, 
+                assets/imgs/header.webp 1600w,
+              "
+              type="image/webp"
+            />
+            <img
+              src="assets/imgs/header.jpg"
+              alt="Header background image"
+              width="1600"
+              height="1067"
+            />
+        </picture>
       <div class="overlay"></div>
 
       <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -973,7 +1000,7 @@
     <!-- Owl carousel  -->
     <script src="assets/vendors/owl-carousel/js/owl.carousel.min.js"></script>
 
-    <!-- Ollie js -->
+    <!-- Main js -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
