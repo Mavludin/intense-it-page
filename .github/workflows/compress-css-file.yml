@@ -1,0 +1,20 @@
+name: CSS Compression
+on:
+  workflow_dispatch:
+jobs:
+  compress-style-css:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Dependencies
+        run: npm install clean-css-cli -g
+      - name: Compress CSS
+        run: cleancss -o assets/css/style.css assets/css/style.css
+      - name: Commit and Push Changes
+        run: |
+          git config user.email "imevlud@gmail.com"
+          git config user.name "Mavludin"
+          git add assets/css/style.css
+          git commit -m "compress style.css"
+          git push -u origin master
