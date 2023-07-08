@@ -8,9 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          token: ${{secrets.ACCESS_TOKEN}}
-        env:
-          JEKYLL_PAT: ${{ secrets.JEKYLL_PAT }}
+          token: ${{ secrets.ACCESS_TOKEN }}
       - name: Install Dependencies
         run: npm install clean-css-cli -g
       - name: Compress CSS
