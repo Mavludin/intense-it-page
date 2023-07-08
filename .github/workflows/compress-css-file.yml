@@ -12,7 +12,7 @@ jobs:
       - name: Compress CSS
         run: cleancss -o assets/css/style.css assets/css/style.css
       - name: Configure Git
-        run:
+        run: |
           git config --global user.email "imevlud@gmail.com"
           git config --global user.name "Mavludin"
       - name: Commit and Push Changes
