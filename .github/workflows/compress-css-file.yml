@@ -20,4 +20,4 @@ jobs:
           git checkout master
           git add assets/css/style.css
           git commit -m "compress style.css"
-          git push -u origin master
+          git push -u origin master -f
