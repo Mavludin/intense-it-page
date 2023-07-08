@@ -11,10 +11,13 @@ jobs:
         run: npm install clean-css-cli -g
       - name: Compress CSS
         run: cleancss -o assets/css/style.css assets/css/style.css
+      - name: Configure Git
+        run:
+          git config --global user.email "imevlud@gmail.com"
+          git config --global user.name "Mavludin"
       - name: Commit and Push Changes
         run: |
-          git config user.email "imevlud@gmail.com"
-          git config user.name "Mavludin"
+          git checkout master
           git add assets/css/style.css
           git commit -m "compress style.css"
           git push -u origin master
