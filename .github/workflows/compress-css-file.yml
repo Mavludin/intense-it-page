@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          token: ${{secrets.gitgub_action_token}}
+          token: ${{secrets.ACCESS_TOKEN}}
       - name: Install Dependencies
         run: npm install clean-css-cli -g
       - name: Compress CSS
