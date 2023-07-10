@@ -21,6 +21,7 @@ jobs:
         run: |
           git config --global user.email "imevlud@gmail.com"
           git config --global user.name "Mavludin"
+          git remote set-url origin git@github.com:Mavludin/intense-it-page.git
       - name: Commit and Push Changes
         run: |
           git add assets/css/style.css
