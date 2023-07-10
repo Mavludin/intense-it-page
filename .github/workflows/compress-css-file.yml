@@ -7,21 +7,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
       - name: Install Dependencies
         run: npm install clean-css-cli -g
       - name: Compress CSS
         run: cleancss -o assets/css/style.css assets/css/style.css
-      - name: Configure SSH
-        run: |
-          mkdir -p ~/.ssh/
-          echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
       - name: Configure Git
         run: |
           git config --global user.email "imevlud@gmail.com"
           git config --global user.name "Mavludin"
-          git remote set-url origin git@github.com:Mavludin/intense-it-page.git
       - name: Commit and Push Changes
         run: |
           git add assets/css/style.css
