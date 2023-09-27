@@ -2,12 +2,12 @@ name: INDEX.HTML validation
 on:
   workflow_dispatch:
 jobs:
-  validate index.html:
+  validate_index_html:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Install Dependencies
         run: npm install w3c-html-validator-cli -g
