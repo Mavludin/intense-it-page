@@ -10,13 +10,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Dependencies
-        run: npm install w3c-html-validator-cli -g
+        run: npm install --save-dev w3c-html-validator - g
 
       - name: Validate HTML
         run: |
-          w3c-validator-cli --file index.html
+          npx html-validator index.html
         continue-on-error: true
-
-      - name: Check Validation Results
-        run: |
-          w3c-validator-cli --report
