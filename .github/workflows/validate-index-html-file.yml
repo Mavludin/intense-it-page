@@ -9,6 +9,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Debug Working Directory
+        run: |
+          pwd
+        working-directory: ${{ github.workspace }}
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -20,3 +25,4 @@ jobs:
       - name: Validate HTML
         run: node assets/js/w3c-validator.mjs
         continue-on-error: true
+
