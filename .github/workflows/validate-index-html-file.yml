@@ -14,5 +14,5 @@ jobs:
 
       - name: Validate HTML
         run: |
-          npx html-validator index.html
+          npx html-validator index.html --quiet
         continue-on-error: true
