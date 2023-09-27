@@ -1,6 +1,7 @@
 name: CSS Compression
 on:
-  workflow_dispatch:
+  pull_request:
+    branches: master
 jobs:
   compress-style-css:
     runs-on: ubuntu-latest
