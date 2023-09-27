@@ -13,6 +13,5 @@ jobs:
         run: npm install --save-dev w3c-html-validator - g
 
       - name: Validate HTML
-        run: |
-          npx html-validator index.html --quiet
+        run: node assets/js/w3c-validator.js
         continue-on-error: true
