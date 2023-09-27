@@ -1,4 +1,4 @@
-name: CSS Compression
+name: INDEX.HTML validation
 on:
   workflow_dispatch:
 jobs:
