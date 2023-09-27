@@ -1,0 +1,22 @@
+name: CSS Compression
+on:
+  workflow_dispatch:
+jobs:
+  validate index.html:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: npm install w3c-html-validator-cli -g
+
+      - name: Validate HTML
+        run: |
+          w3c-validator-cli --file index.html
+        continue-on-error: true
+
+      - name: Check Validation Results
+        run: |
+          w3c-validator-cli --report
