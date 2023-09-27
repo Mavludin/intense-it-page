@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.INTENCE_IT_PAGE_WORKFLOW }}
       - name: Install Dependencies
         run: npm install clean-css-cli -g
       - name: Compress CSS
