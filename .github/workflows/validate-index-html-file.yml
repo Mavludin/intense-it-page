@@ -14,7 +14,6 @@ jobs:
 
       - name: Validate HTML
         run: html-validate --formatter stylish index.html
-        continue-on-error: true
 
         
 
