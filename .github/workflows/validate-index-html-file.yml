@@ -9,15 +9,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-
       - name: Install Dependencies
-        run: npm install --save-dev w3c-html-validator - g
+        run: npm install -g html-validate
 
       - name: Validate HTML
-        run: node assets/js/w3c-validator.mjs
+        run: html-validate --formatter stylish index.html
         continue-on-error: true
+
+        
 
