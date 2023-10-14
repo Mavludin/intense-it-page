@@ -1,6 +1,8 @@
 name: INDEX.HTML validation
 on:
-  workflow_dispatch:
+  pull_request:
+    branches:
+      - develop
 jobs:
   validate_index_html:
     runs-on: ubuntu-latest
