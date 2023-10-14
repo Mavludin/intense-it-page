@@ -8,6 +8,7 @@
   --pink: #eb5175;
   --red: #fd5d93;
   --orange: #52c5ff;
+  --btn-primary-hover: #0aabfc;
   --yellow: #ffc107;
   --green: #00f2c3;
   --teal: #20c997;
@@ -3682,6 +3683,19 @@ fieldset:disabled a.btn {
 .btn-link:hover {
   color: #e91b1b;
   text-decoration: none;
+}
+
+.btn-link-primary {
+  font-weight: 400;
+  color: var(--white);
+  background-color: var(--orange);
+  text-decoration: none;
+}
+
+.btn-link-primary:hover {
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--btn-primary-hover);
 }
 
 .btn-link.focus,
