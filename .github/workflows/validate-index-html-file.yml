@@ -10,10 +10,11 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Dependencies
-        run: npm install -g html-validate
+        run: npm i w3c-html-validator -g
 
       - name: Validate HTML
-        run: html-validate --formatter stylish index.html
+        run: html-validator --quiet index.html
+
 
         
 
